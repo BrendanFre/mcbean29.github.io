@@ -8,13 +8,70 @@
   </head>
   <body>
     <header></header>
-    <nav></nav>
+    <nav>
+      <img
+        src="/img/menu-btn.webp"
+        width="54"
+        height="24"
+        id="menu-button"
+        class="menu-button"
+        onclick="dropping_menu()"
+      />
+      <div id="dropdown">
+        <a href="#about-me">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
     <main>
-      <section class="hero-section">
-        <h1>I'm Brendan Freeman</h1>
-        <p>A web developer to suit your needs.</p>
+      <div class="hero-section">
+        <div class="hero-text">
+          <h1>I'm Brendan Freeman</h1>
+          <p>A web developer to suit your needs.</p>
+        </div>
+      </div>
+      <section>
+        <h2 id="about-me">About Me</h2>
+        <p class="about-me-desc">
+          Hi, I'm Brendan. I've been working in web development for over a year.
+          I run a Wordpress blog which you can check out
+          <a href="https://mcbean29.com" target="_blank">here.</a> My skills
+          include but are not limited to:
+        </p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+        </ul>
+        <p class="about-me-desc">Running my own Wordpress website has taught me various extra skills that I use to optimize the website to perform better:</p>
+        <ul>
+          <li>SEO</li>
+          <li>Image optimization</li>
+          <li>php (used to build own theme)</li>
+        </ul>
+      </section>
+      <section>
+        <h2 id="portfolio">Portfolio</h2>
+        <p>Here are various projects that I have managed and completed since becoming a developer.</p>
+        <div><h3>Gaming Website</h3>
+          <div class="portfolio-img">
+          <img src="/img/portfolio-gamesmix.webp">
+        </div>
+          <p>
+
+        </p></div>
+        <div><h3>3 Section Landing Page</h3><p>
+          
+        </p></div>
+        
+
+
+      </section>
+      <section>
+        <h2 id="contact">Contact</h2>
       </section>
     </main>
     <footer></footer>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

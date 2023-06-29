@@ -1,37 +1,79 @@
-body{
-    margin: 0;
-    color:antiquewhite;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url("https://images.pexels.com/photos/7876708/pexels-photo-7876708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-}
-main{
-    margin: 0 auto;
-    width: 640px;
+/*=======info=====*/
+/*https://colorhunt.co/palette/0e29541f6e8c2e8a9984a7a1*/
+
+:root {
+  --primary-color: rgb(14, 41, 84);
+  --primary-color-gradient: rgba(14, 41, 84, 0.25);
+  --secondary-color: rgb(31, 110, 140);
+  --tertiary-color: rgb(46, 138, 153);
+  --quaternary-color: rgb(132, 167, 161);
 }
 
-button{
-    width: 100%;
-    
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+/*===================MOBILE FIRST SECTION===============*/
+.menu-button {
+  padding: auto;
+  margin: 1vw 1vw;
 }
 
-form{
-    padding-left: 2em;
-    padding-right: 2em;
-    background-color: rgba(27, 27, 50, 0.8);
-    border-radius: 5px;
+#dropdown {
+  display: none;
+}
+/*----------------------HERO SECTION-------------*/
+
+.hero-section {
+  background-image: url("/img/programmer.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 50vw;
 }
 
-.block{
-    display:block;
-    width: 100%;
-}
-
-.inline-block{
-    display: block;
-}
-
-#title, #description{
-    margin: 0 auto;
-    width: 400px;
+.hero-text{
     text-align: center;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 8%;
+    margin: auto;
+    width: 75%;
+}
+
+.hero-text h1 {
+  font-size: 8vw;
+}
+
+.hero-text p {
+    font-size: 4vw;
+  }
+/*--------SECTION-------*/
+.about-me-desc{
+    padding: 0 2vw;
+    font-size: 4vw;
+}
+
+li{
+    font-size: 4vw;
+}
+section h2{
+    font-size: 6vw;
+}
+
+h3{
+    font-size: 4vw;
+}
+
+section p{
+    font-size: 4vw;
+    padding: 0 2vw;
+}
+
+.portfolio-img img{
+    max-height: 100%;
+    max-width: 100%;
 }
