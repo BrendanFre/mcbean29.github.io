@@ -1,0 +1,136 @@
+:root{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --primary-color: rgb(236, 240, 241);
+    --secondary-color: rgb(41, 128, 186);
+    --secondary-accent: rgb(44, 62, 80);
+    --main-gradient: linear-gradient(rgba(44, 62, 80, 1) 0%, rgba(44, 62, 80, 0.2) 100%);
+    color: var(--primary-color);
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100vw;
+}
+h2{
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/*-----------HEADER & NAV SECTION----------*/
+nav{
+    width: 100%;
+}
+
+.menu{
+    margin: auto;
+    padding: auto;
+    width: 100%;
+}
+#dropdown{
+    display:none;
+}
+#dropdown a{
+    display: block;
+    text-align: center;
+    background-color: var(--secondary-color);
+    margin: 2px auto;
+    padding: 8px 8px;
+    text-decoration: none;
+    width: 90vw;
+    
+}
+
+.menu-button{
+    border: 1px solid #000;
+    padding: 10px 42vw;
+    margin: 1vw;
+    height: 5vw;
+    width: 10%;
+
+}
+/*-----------MAIN SECTION----------*/
+
+/*-----------SECTION...SECTION-------*/
+section{
+    margin: 0;
+    padding: 2vw 1vw;
+}
+
+section h2{
+    padding: 0;
+    margin: 1vw auto;
+    font-size: 2rem;
+}
+
+.hero-section{
+    background-image: var(--main-gradient), url("/img/hero-img.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 50vw;
+    width: auto;
+    margin: 0;
+}
+section:nth-of-type(2), section:nth-of-type(4), section:nth-of-type(6){
+    background-color: var(--primary-color);
+}
+
+section:nth-of-type(3), section:nth-of-type(5){
+    background-color: var(--secondary-color);
+}
+
+section:last-of-type{
+    padding-bottom: 100vw;
+}
+/*-----------FOOTER SECTION----------*/
+footer{
+    position: fixed;
+    bottom: 0px;
+    border-top: 5px solid var(--secondary-accent);
+    background: linear-gradient(var(--secondary-accent) 0%, var(--secondary-color) 100%);
+    color: var(--primary-color);
+    padding: 1vw 1vw;
+}
+
+
+/*----------DESKTOP SECTION------------*/
+@media only screen and (min-width: 800px) {
+    .menu-button{
+        display: none;
+    
+    }
+    #dropdown a{
+        display: inline;
+        text-align: center;
+        font-size: 2rem;
+        margin: 20px auto;
+        padding: 8px 8px;
+        text-decoration: none;
+        width: 100vw;
+        color: var(--primary-color);
+        
+    }
+
+    .menu{
+        width: 100vw;
+        display:block;
+    }
+
+    #dropdown{
+        display:block;
+        background-color: var(--secondary-color);
+        width: 100vw;
+        padding: 1vw 1vw;
+    }
+
+    .nav-item{
+        display: inline;
+    }
+
+    .menu i{
+        display: none;
+    }
+    
+}
