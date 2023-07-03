@@ -78,3 +78,31 @@ section p{
     max-height: 100%;
     max-width: 100%;
 }
+
+.portfolio-txt{
+  font-size: large;
+}
+
+.portfolio-section{
+  background-color: var(--quaternary-color);
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 800px){
+  .portfolio-img img{
+    display: inline;
+    grid-column: 1;
+    width: 50vw;
+  }
+  .portfolio-txt{
+    vertical-align:top;
+    margin: 0;
+    grid-column: 2;
+    font-size: 2vw;
+  }
+  .wordpress-section{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+}
