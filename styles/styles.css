@@ -241,7 +241,8 @@ section p {
   margin: 1% 0;
 }
 
-.contact-input[type="email"] {
+.contact-input[type="email"],
+.contact-input[type="text"] {
   width: 100%;
 }
 
