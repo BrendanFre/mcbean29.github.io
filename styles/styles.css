@@ -163,7 +163,7 @@ li {
   font-size: var(--normal-text-size);
 }
 section h2 {
-  font-size: 6vw;
+  font-size: 2em;
   margin-left: 2vw;
   animation-name: run-in;
   animation-duration: 1s;
@@ -177,20 +177,37 @@ section p {
   font-size: var(--normal-text-size);
   padding: 0 5vw;
 }
-
-.portfolio-img img {
-  max-height: 100%;
-  max-width: 100%;
+/* ========PROJECTS======================================= */
+.project-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #242424;
+  color: #d2e397;
+  font-size: 1em;
 }
 
-.portfolio-txt {
-  font-size: var(--normal-text-size);
-  margin: 0 2.5vw;
+.project-section img {
+  width: 100%;
 }
 
-.portfolio-section {
-  background-color: var(--quaternary-color);
-  color: hsl(0, 0%, 100%);
+@media only screen and (min-width: 800px) {
+  .project-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .project-section:nth-of-type(2) {
+    flex-direction: row-reverse;
+  }
+  .project-section img,
+  .project-section p {
+    width: 40%;
+    justify-content: space-evenly;
+  }
 }
 
 /*--------SKILLS--------------------------------------------*/
@@ -220,12 +237,6 @@ section p {
     grid-column: 1;
     width: 50vw;
   }
-  .portfolio-txt {
-    vertical-align: top;
-    margin: 0;
-    grid-column: 2;
-    font-size: 2vw;
-  }
   .wordpress-section {
     display: grid;
     grid-template-columns: auto auto;
@@ -233,14 +244,24 @@ section p {
   #menu-button {
     display: none;
   }
+
+  .section h2 {
+    font-size: 4em;
+  }
 }
 
 /********************************CONTACT***************************************/
 .contact-section a {
-  font-size: 8em;
+  font-size: 4em;
   text-decoration: none;
   color: var(--primary-color);
   padding: 0 5%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact-section a {
+    font-size: 10em;
+  }
 }
 
 /******************************************************************************/
