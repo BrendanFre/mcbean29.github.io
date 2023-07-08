@@ -234,32 +234,11 @@ section p {
 }
 
 /********************************CONTACT***************************************/
-.contact-input {
-  display: block;
-}
-.contact-input input {
-  margin: 1% 0;
-}
-
-.contact-input[type="email"],
-.contact-input[type="text"] {
-  width: 100%;
-}
-
-.contact-input textarea {
-  width: 100%;
-  height: 24em;
-  margin: 1% 0;
-}
-
-.contact-input[type="submit"] {
-  width: 100%;
-  height: 40px;
-  background-color: var(--primary-color);
-  border: none;
-  color: var(--primary-highlight);
-  font-weight: bolder;
-  font-size: 2em;
+.contact-section a {
+  font-size: 8em;
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 0 5%;
 }
 
 /******************************************************************************/
