@@ -112,18 +112,24 @@
           <legend>Email Me:</legend>
           <form method="post" action="scripts/contact-form-process.php">
             <label class="contact-input"
-              >Your Name:<input type="text" name="Name" class="contact-input"
+              >Your Name:<input
+                type="text"
+                name="Name"
+                class="contact-input"
+                required
             /></label>
             <label class="contact-input"
               >Your Email Address:<input
-                type="Email"
+                type="email"
                 class="contact-input"
-                name="sender-email"
+                name="Email"
+                required
             /></label>
             <label class="contact-input"
               >Your Message:<textarea
                 class="contact-input"
                 name="Message"
+                required
               ></textarea>
             </label>
             <button type="submit" class="contact-input" />
