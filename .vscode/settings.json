@@ -1,3 +1,6 @@
 {
-    "minify.minifyExistingOnSave": true
+    "minify.minifyExistingOnSave": true,
+    "cSpell.words": [
+        "Stylesheet"
+    ]
 }
