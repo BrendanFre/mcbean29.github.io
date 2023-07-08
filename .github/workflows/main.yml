@@ -14,3 +14,4 @@ jobs:
           server: ftp.brendanf41.sg-host.com
           username: bfreeman0@brendanf41.sg-host.com
           password: ${{ secrets.PASSWORD }}
+          server-dir: brendanf41.sg-host.com/public_html/
