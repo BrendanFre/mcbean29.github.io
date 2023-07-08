@@ -1,29 +1,130 @@
 /*=======info=====*/
 /*https://colorhunt.co/palette/0e29541f6e8c2e8a9984a7a1*/
+/**
+ * [Master Stylesheet]
+ */
 
+/******************************************************************************/
+
+/**
+ * Project:	My Portfolio
+ * Version:	1.0
+ * Last change:	8th July 2023 [fixed Float bug, vf]
+ * Assigned to:	Brendan Freeman
+ * Primary use:	Usage 
+ */
+
+/******************************************************************************/
+
+/**
+ * [Table of Contents]
+ * 1. Imports
+ * 2. Variables
+ * 3. Body
+ * 4. Header / Navigation
+ * 5. Content
+ * 6. Footer
+ */
+
+/******************************************************************************/
+
+/**
+ * [1. Imports]
+ */
+
+/******************************************************************************/
+
+/******************************************************************************/
+
+/**
+ * [2. Variables]
+ */
+
+/******************************************************************************/
 :root {
   --primary-color: rgb(14, 41, 84);
   --primary-color-gradient: rgba(14, 41, 84, 0.25);
   --secondary-color: rgb(31, 110, 140);
   --tertiary-color: rgb(46, 138, 153);
   --quaternary-color: rgb(132, 167, 161);
+  --normal-text-size: var(--normal-text-size);
 }
 
+/******************************************************************************/
+
+/**
+ * [3. Body]
+ */
+
+/******************************************************************************/
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Menlo", sans-serif;
+  overflow-x: hidden;
 }
+/******************************************************************************/
+
+/**
+ * [4. Header/ Navigation]
+ */
+
+/******************************************************************************/
+
 /*===================MOBILE FIRST SECTION===============*/
 .menu-button {
-  padding: auto;
+  padding: 0 auto;
   margin: 1vw 1vw;
 }
 
 #dropdown {
   display: none;
 }
+#dropdown a {
+  color: var(--primary-color);
+  display: block;
+  text-align: center;
+  border-top: solid 1px var(--quaternary-color);
+  margin-bottom: 2% 0;
+  padding: 2vw 0;
+  text-decoration: none;
+}
+@media only screen and (min-width: 800px) {
+  #dropdown {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  #dropdown a {
+    color: var(--primary-color);
+    text-align: center;
+    border-right: solid 1px var(--quaternary-color);
+    padding: 0 10%;
+    text-decoration: none;
+    margin: 0;
+  }
+  #dropdown a:hover {
+    color: var(--secondary-color);
+    background-color: var(--quaternary-color);
+  }
+  #dropdown a:nth-of-type(1) {
+    grid-column: 1;
+  }
+  #dropdown a:nth-of-type(2) {
+    grid-column: 2;
+  }
+  #dropdown a:nth-of-type(3) {
+    grid-column: 3;
+  }
+}
+/******************************************************************************/
+
+/**
+ * [5. Content]
+ */
+
+/******************************************************************************/
+
 /*----------------------HERO SECTION-------------*/
 
 .hero-section {
@@ -32,77 +133,110 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 50vw;
+  height: 200%;
+  overflow: hidden;
 }
 
-.hero-text{
-    text-align: center;
-    color: white;
-    vertical-align: middle;
-    text-align: center;
-    padding-top: 8%;
-    margin: auto;
-    width: 75%;
+.hero-text {
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 8%;
 }
 
 .hero-text h1 {
-  font-size: 8vw;
+  font-size: 3em;
 }
 
 .hero-text p {
-    font-size: 4vw;
-  }
+  font-size: var(--normal-text-size);
+}
 /*--------SECTION-------*/
-.about-me-desc{
-    padding: 0 2vw;
-    font-size: 4vw;
+.about-me-desc {
+  padding: 0 2vw;
+  font-size: var(--normal-text-size);
+  font-weight: 100;
 }
 
-li{
-    font-size: 4vw;
+li {
+  font-size: var(--normal-text-size);
 }
-section h2{
-    font-size: 6vw;
-}
-
-h3{
-    font-size: 4vw;
+section h2 {
+  font-size: 6vw;
+  margin-left: 2vw;
 }
 
-section p{
-    font-size: 4vw;
-    padding: 0 2vw;
+h3 {
+  font-size: var(--normal-text-size);
 }
 
-.portfolio-img img{
-    max-height: 100%;
-    max-width: 100%;
+section p {
+  font-size: var(--normal-text-size);
+  padding: 0 5vw;
 }
 
-.portfolio-txt{
-  font-size: large;
+.portfolio-img img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
-.portfolio-section{
+.portfolio-txt {
+  font-size: var(--normal-text-size);
+  margin: 0 2.5vw;
+}
+
+.portfolio-section {
   background-color: var(--quaternary-color);
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
 }
 
-@media only screen and (min-width: 800px){
-  .portfolio-img img{
+/*--------SKILLS--------------------------------------------*/
+.skills-list {
+  margin-left: 5%;
+  width: 100%;
+}
+.skills-list ul {
+  list-style-type: none;
+}
+
+.skills-list li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 5%;
+}
+
+.skills-list p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .portfolio-img img {
     display: inline;
     grid-column: 1;
     width: 50vw;
   }
-  .portfolio-txt{
-    vertical-align:top;
+  .portfolio-txt {
+    vertical-align: top;
     margin: 0;
     grid-column: 2;
     font-size: 2vw;
   }
-  .wordpress-section{
+  .wordpress-section {
     display: grid;
     grid-template-columns: auto auto;
   }
-
+  #menu-button {
+    display: none;
+  }
 }
+
+/******************************************************************************/
+
+/**
+ * [4. Footer]
+ */
+
+/******************************************************************************/

@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brendan Freeman</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
   </head>
   <body>
     <header></header>
     <nav>
       <img
-        src="/img/menu-btn.webp"
+        src="img/icons/menu-line.png"
         width="54"
         height="24"
         id="menu-button"
@@ -32,7 +33,7 @@
     <main>
       <div class="hero-section">
         <div class="hero-text">
-          <h1>I'm Brendan Freeman</h1>
+          <h1 id="title">Brendan Freeman</h1>
           <p>A web developer to suit your needs.</p>
         </div>
       </div>
@@ -51,12 +52,20 @@
         </ul>
         <p class="about-me-desc">
           Running my own Wordpress website has taught me various extra skills
-          that I use to optimize the website to perform better:
+          that I use to optimize the website to perform better.
         </p>
         <ul>
           <li>SEO</li>
           <li>Image optimization</li>
           <li>php (used to build own theme)</li>
+        </ul>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li><i class="ri-html5-fill ri-3x"></i><p>HTML</p></li>
+          <li><i class="ri-css3-fill ri-3x"></i><p>CSS3</p></li>
+          <li><i class="ri-javascript-fill ri-3x"></i><p>Javascript</p></li>
         </ul>
       </section>
       <section class="portfolio-section">
@@ -71,9 +80,9 @@
             <span class="portfolio-img">
               <img src="/img/portfolio-gamesmix.webp" />
             </span>
-            <span class="portfolio-txt">
+            <p class="portfolio-txt">
               This is my Wordpress website that I have created and ran since 2021. Made using a third-part theme and maintained for over 2 years. Running this website has taught me the best practices for SEO. I am in the process of designing my own Wordpress theme.
-            </span>
+            </>
             </div>
         </div>
           <p></p>
@@ -88,6 +97,6 @@
       </section>
     </main>
     <footer></footer>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script.min.js"></script>
   </body>
 </html>
