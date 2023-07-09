@@ -18,19 +18,8 @@
 /**
  * [Table of Contents]
  * 1. Imports
- * 2. Body
- * 3. Header / #header
- * 4. Navigation / #navbar
- * 5. Content / #content
- * 6. Left column / #leftcolumn
- * 7. Right column / #rightcolumn
- * 8. Sidebar / #sidebar
- * 9. RSS / #rss
- * 10. Search / #search
- * 11. Boxes / .box
- * 12. Sideblog / #sideblog
- * 13. Advertisements / .ads
- * 14. Footer / #footer
+ * 2. Header
+ * 3. Navigation
  */
 
 /******************************************************************************/
@@ -54,14 +43,65 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: 20px 80px;
+}
+
+.home-link,
+.requests-link,
+.contact-link {
+  text-decoration: none;
+  border-right: 1px solid black;
+  grid-row: 1 / span 1;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+.logo {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column: 1 1;
 }
 
 .home-link {
-  grid-column: 2;
+  grid-column: 3 / span 1;
 }
 
 .requests-link {
-  grid-column: 3;
+  grid-column: 4 / span 1;
+}
+
+.contact-link {
+  grid-column: 5 / span 1;
+}
+
+.surgery-image {
+  background-image: url("../img/surgery-image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: antiquewhite;
+  grid-row: 2;
+  grid-column: 2 / span 5;
+}
+/******************************************************************************/
+
+/**
+ * [3. Navigation]
+ */
+
+/******************************************************************************/
+nav {
+  padding: 15px 10px;
+}
+
+nav a {
+  display: inline;
+  text-decoration: none;
+  padding: 20px 2vw;
+  margin-top: 20px;
+  color: #000;
+}
+
+.dropdown-1 {
+  display: none;
 }

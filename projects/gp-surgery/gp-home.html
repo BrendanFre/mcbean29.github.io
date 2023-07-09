@@ -8,13 +8,19 @@
   </head>
   <body>
     <header>
-      <h1>Oak Surgery</h1>
-      <p class="tagline">Serving the community since 1998.</p>
+      <span class="logo">
+        <h1>Oak Surgery</h1>
+        <p class="tagline">Serving the community since 1998.</p>
+      </span>
+      <a href="gp-home.html" class="home-link">Home</a>
+      <a href="requests.html" class="requests-link">Online Requests</a>
+      <a href="contact" class="contact-link">Contact</a>
+      <div class="surgery-image"></div>
     </header>
     <nav>
       <a href="gp-home.html" target="_self">Home</a>
-      <a href="" target="_blank" rel="noopener noreferrer"
-        >Surgery Information</a
+      <span onclick="openSurgeryDropdown()" id="surgery-information"
+        >Surgery Information</span
       >
       <div class="dropdown-1">
         <a href="pages/address.html" target="self">Location</a>
